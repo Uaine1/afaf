@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mydiv">
+        <div class="container">
+            <div class="video-container">
+                <video width="320" height="240" autoplay>
+                    <source src="Snapinsta.app_video_GB2VBRGfBzuRpwkCACob2MFnwcgGbq_EAAAF-ezgif.com-crop-video (online-video-cutter.com).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="audio-player">
+                    <audio autoplay>
+                        <source src="Caramelldansen (Only chorus).mp3" type="audio/mp3">
+                        Your browser does not support the audio element
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Play the video and audio when the page is loaded if it hasn't been played before
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.querySelector('video');
+            var audio = document.querySelector('audio');
+            
+            if (!video.played.length) {
+                video.play();
+            }
+
+            if (!audio.played.length) {
+                audio.play();
+            }
+        });
+    </script>
+</body>
+</html>
